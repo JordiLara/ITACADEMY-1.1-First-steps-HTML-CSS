@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Jordi Lara">
+    <title>Easy-To-Do</title>
 </head>
 <body>
-    
+    <!--To-Do Russian doll-->
+
+    <!--1. add with css a bigger text box to contentTextBox-->
+
+
+    <div id="Tittle">
+        <h4>To-Do List</h4>
+    </div>
+
+
+    <div> <!--will show a summary about the task to do-->
+        <label for="tittleTextBox">Add a tittle for your task</label>
+        <input type="text" id="tittleTextBox" placeholder="Go Shoping"> 
+    </div>
+
+    <div> <!--text area to add a description about the task to perform-->
+        <label for="contentTextBox">Add elements or a description about your task</label>
+        <input type="text" id="contentTextBox" placeholder="Get bananas, oranges, espinacs"> 
+    </div>
+
+        <input type="button" id="btn_addNewToDO" name="addToDo" value="New To-Do"> 
+        <input type="button" id="btn_deleteToDo" name="deleteToDo" value="Delete To-Do" >
+
+    <script type="module" src="main.js"></script> 
+
 </body>
 </html>
