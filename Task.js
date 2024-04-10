@@ -1,6 +1,6 @@
 "use strict";
 
-class ToDo {
+export class ToDo {
     
     constructor (task) { 
 
@@ -11,7 +11,7 @@ class ToDo {
     get task() {
         return this._task;
     }
-    
+
     set task(newTask) {
          this._task = newTask;
     }

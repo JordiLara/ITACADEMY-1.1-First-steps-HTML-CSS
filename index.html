@@ -7,6 +7,7 @@
     <title>Easy-To-Do</title>
 </head>
 <body>
+
     <!--To-Do Russian doll-->
 
     <!--1. add with css a bigger text box to contentTextBox-->
@@ -17,18 +18,19 @@
     </div>
 
 
-    <div> <!--will show a summary about the task to do-->
-        <label for="tittleTextBox">Add a tittle for your task</label>
-        <input type="text" id="tittleTextBox" placeholder="Go Shoping"> 
+    <div> 
+        <label for="task">Add a new task to your To-Do</label>
+        <input type="text" id="task" placeholder="Go Shoping"><br> 
+        <div id="taskList"></div>
     </div>
 
-    <div> <!--text area to add a description about the task to perform-->
+    <!--<div> text area to add a description about the task to perform
         <label for="contentTextBox">Add elements or a description about your task</label>
         <input type="text" id="contentTextBox" placeholder="Get bananas, oranges, espinacs"> 
-    </div>
+    </div>-->
 
-        <input type="button" id="btn_addNewToDO" name="addToDo" value="New To-Do"> 
-        <input type="button" id="btn_deleteToDo" name="deleteToDo" value="Delete To-Do" >
+        <input type="button" id="btn_task" name="addTask" value="Add Task"> 
+        <input type="button" id="btn_deleteTask" name="deleteTask" value="Delete Task" >
 
     <script type="module" src="main.js"></script> 
 
