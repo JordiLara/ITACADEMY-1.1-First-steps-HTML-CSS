@@ -1,18 +1,18 @@
 "use strict";
 
-export class ToDo {
+export class Task {
     
-    constructor (task) { 
+    constructor (item) { 
 
-        this._task = task;
+        this._item = item;
         
     }
 
-    get task() {
-        return this._task;
+    get item() {
+        return this._item;
     }
 
-    set task(newTask) {
-         this._task = newTask;
+    set item(newItem) {
+         this._item = newItem;
     }
 }

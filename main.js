@@ -1,21 +1,33 @@
 "use strict";
 
-//import { ToDo } from "./Task.js";
+//import { Task } from "./Task.js";
 
 // add a new task to the ToDo List
 
 function addTask() {
 
-    let task = document.getElementById('task');
-    let taskList = document.getElementById('taskList');
+    let item = document.getElementById('item');
+    let itemList = document.getElementById('itemList');
 
-    //const TASK = new ToDo(task); // Manel, no le veo el sentido al archivo Task
 
     // Generate a new element at the HTLM to show the added new task, and add a new row everytime a new task is added.
-    let list = document.createElement('list'); 
-    list.textContent = task.value;
-    taskList.appendChild(list);
-}
+    let li = document.createElement('li'); 
 
-document.getElementById('btn_task').addEventListener('click', addTask);
-/*document.getElementById('btn_deleteToDo').addEventListener('click', deleteToDo)*/
+    li.textContent = item.value;
+    itemList.appendChild(li);
+
+    // Generate a new button for every new item to delete it when the task its done
+    let deleteBtn = document.createElement('button');
+
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.classList.add('delete-btn');
+    deleteBtn.onclick = function() {
+    itemList.removeChild(li);
+    };
+  
+    li.appendChild(deleteBtn);
+  
+    itemInput.value = '';
+
+}
+    document.getElementById('btn_item').addEventListener('click', addTask);
