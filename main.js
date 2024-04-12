@@ -1,22 +1,30 @@
 "use strict";
 
-//import { Task } from "./Task.js";
+import { Task } from "./Task.js";
 
 // add a new task to the ToDo List
+
+let taskList = [];
 
 function addTask() {
 
     let item = document.getElementById('item');
     let itemList = document.getElementById('itemList');
 
+    const TASK = new Task(item);
+
+    taskList.push(TASK);
+    
 
     // Generate a new element at the HTLM to show the added new task, and add a new row everytime a new task is added.
+
     let li = document.createElement('li'); 
 
     li.textContent = item.value;
     itemList.appendChild(li);
 
-    // Generate a new button for every new item to delete it when the task its done
+    // Generate a new button for every new item to delete it when the task its done.
+
     let deleteBtn = document.createElement('button');
 
     deleteBtn.textContent = 'Delete';
@@ -24,10 +32,12 @@ function addTask() {
     deleteBtn.onclick = function() {
     itemList.removeChild(li);
     };
-  
+    
     li.appendChild(deleteBtn);
-  
-    itemInput.value = '';
 
+    itemInput.value = '';
+    
 }
+
+
     document.getElementById('btn_item').addEventListener('click', addTask);
