@@ -2,17 +2,17 @@
 
 export class Task {
     
-    constructor (item) { 
+    constructor (description) { 
 
-        this._item = item;
-        
+        this._description = description;
+
     }
 
-    get item() {
-        return this._item;
+    get description() {
+        return this._description;
     }
 
-    set item(newItem) {
-         this._item = newItem;
+    set description(description) {
+         this._description = description;
     }
 }

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jordi Lara">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Easy-To-Do</title>
 </head>
 <body>
@@ -12,11 +16,20 @@
 
     <!--1. add with css a bigger text box to contentTextBox-->
 
+   <!-- Añadir una tipografia de Google font y aplicarla a todo el proyecto, por ejemplo "Roboto"
+    - Añadir una imagen
+    - Crear otra página de "Instrucciones" con un listado básico de como funciona y en esta principal poner un texto "Instrucciones" que enlace a la otra
 
-    <div id="Tittle">
-        <h4>To-Do List</h4>
+    *BONUS: Meter bootstrap y la imagen que esté a la derecha con el contenido en 2 divs de col-md-6-->
+
+    <div class="row">
+        <div class="col-md-6">1</div>
+        <div class="col-md-6">2</div>
     </div>
 
+    <div class=tittle id="Tittle">
+        <h4>Add a New To-Do</h4>
+    </div>
 
     <div> 
         <label for="item">Add a new task to your To-Do</label>
@@ -25,7 +38,9 @@
         <ul id="itemList"></ul>
     </div>
 
+
     <script type="module" src="main.js"></script> 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script> 
 
 </body>
 </html>
