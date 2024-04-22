@@ -14,9 +14,7 @@ function addTask() {
     const TASK = new Task(item.value);
 
     taskList.push(TASK);
-   
     renderTaskList();
-
     item.value = '';
     
 }
@@ -41,6 +39,23 @@ function renderTaskList() {
         let li = document.createElement('li'); 
         li.textContent = taskList[i].description;
         taskListElement.appendChild(li);
+
+        // Generate a new checkbox element for every new task.
+
+        let taskDone = document.createElement('input');
+        taskDone.type = 'checkbox';
+        taskDone.classList.add('task-done-checkbox');
+        li.appendChild(taskDone);
+
+        // If a task its done and the user press the checkbox, draws a line 
+
+        taskDone.addEventListener('change', function() {
+            if (this.checked) {
+                li.style.textDecoration = 'line-through';
+            } else {
+                li.style.textDecoration = 'none';
+            }
+        });
 
         // Generate a new button for every new item to delete it when the task its done.
 
@@ -68,4 +83,5 @@ document.getElementById('item').addEventListener('keydown', function(e) { //Enab
         addTask()
     }
 });
+
     
