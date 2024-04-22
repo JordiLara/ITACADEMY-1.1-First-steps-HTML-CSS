@@ -5,7 +5,6 @@ import { Task } from "./Task.js";
 // add a new item to the ToDo List
 
 let taskList = [];
-console.log(taskList)
 
 function addTask() {
 
@@ -28,9 +27,6 @@ function renderTaskList() {
     taskListElement.textContent = '';
 
     for (let i = 0; i < taskList.length; i++) {
-        if (taskList[i] === null) {
-            continue;
-        }
 
         // Generate a new element at the HTLM to show the added new task, and add a new row everytime a new task is added.
 
@@ -56,6 +52,11 @@ function renderTaskList() {
         li.appendChild(deleteBtn);
     }
 
-    console.log(taskList);
 }
 document.getElementById('btn_item').addEventListener('click', addTask);
+document.getElementById('item').addEventListener('keydown', function(e) { //Enable pressing 'Enter' to add a task.
+    if (e.code === 'Enter') { 
+        addTask()
+    }
+});
+    
