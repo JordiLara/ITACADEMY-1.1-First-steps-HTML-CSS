@@ -6,6 +6,7 @@ import { Task } from "./Task.js";
 
 let taskList = [];
 
+
 function addTask() {
 
     let item = document.getElementById('item');
@@ -13,11 +14,18 @@ function addTask() {
     const TASK = new Task(item.value);
 
     taskList.push(TASK);
-
+   
     renderTaskList();
 
     item.value = '';
     
+}
+
+function deleteAll(){
+    
+    confirm('Are you sure you want to delete all current tasks?');
+    taskList = [];
+    renderTaskList();
 }
 
 function renderTaskList() {
@@ -54,6 +62,7 @@ function renderTaskList() {
 
 }
 document.getElementById('btn_item').addEventListener('click', addTask);
+document.getElementById('btn_deleteAll').addEventListener('click', deleteAll);
 document.getElementById('item').addEventListener('keydown', function(e) { //Enable pressing 'Enter' to add a task.
     if (e.code === 'Enter') { 
         addTask()
