@@ -15,7 +15,6 @@ function addTask() {
     taskList.push(TASK);
     renderTaskList();
     item.value = '';
-    
 }
 
 // delete all items at the To-Do list.
@@ -64,31 +63,49 @@ function renderTaskList() {
             }
         });
 
+        // Generate a new button for every new item to edit it if needed.
+
+        let editItem = null;
+
+        let editBtn = document.createElement("button");
+        editBtn.textContent = 'Edit';
+
+        editBtn.onclick = () => { 
+            let editItem = prompt('edit task');
+            taskList[i].description = editItem;
+            renderTaskList();
+        }
+
+        document.getElementById('item').value = editItem;
+        
+        li.appendChild(editBtn);
+
         // Generate a new button for every new item to delete it when the task its done.
 
         let deleteBtn = document.createElement('button');
         deleteBtn.textContent = 'Delete';
         deleteBtn.classList.add('delete-btn');
 
-        // this block of code its used to capture the current value of 'i'
+        // this block of code its used to capture the current value of 'i' and delete single task items.
 
         deleteBtn.onclick = ((index) => {
             return () => {
-                if (confirm('The task is done?'))
-                taskList.splice(index, 1); // Remove the task from the array
-                renderTaskList(); // Re-render the task list
+                if (confirm('The task is done?')) {
+                    taskList.splice(index, 1); // Remove the task from the array
+                    renderTaskList(); // Re-render the task list
+                }
             };
         })(i);
 
         li.appendChild(deleteBtn);
     }
-
 }
+
 document.getElementById('btn_item').addEventListener('click', addTask);
 document.getElementById('btn_deleteAll').addEventListener('click', deleteAll);
 document.getElementById('item').addEventListener('keydown', function(e) { //Enable pressing 'Enter' to add a task.
     if (e.code === 'Enter') { 
-        addTask()
+        addTask();
     }
 });
 

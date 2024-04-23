@@ -11,8 +11,7 @@ Build a simple to-do list application where users can add, edit, and delete task
    - Push your changes to a remote repository (e.g., GitHub) to keep a backup and for possible collaboration.
 
 2. **HTML Structure:**
-   - Create a basic HTML structure including the necessary elements such as `<div>`, `<ul>`, `<li>`, `<input>`, `<button>`, etc.
-   - Set up placeholders for where the tasks will be displayed.
+   
 
 2. **CSS Styling:**
    - Use Bootstrap for basic styling to make the application responsive and visually appealing.
@@ -20,10 +19,12 @@ Build a simple to-do list application where users can add, edit, and delete task
 
 3. **JavaScript Functionality:**
    
+
+
+
+
+
    
-   - Allow users to mark tasks as completed (clicking on a "checkbox" next to the task). When a task is completed, it appears strikedthrough ~~like this~~ and also in a different color (example: gray, instead of black). You can also un-check the checkbox to mark the task as not-done again (revert the change you just did).
-   
-   - Provide the ability to edit tasks inline (clicking on an "Edit" link next to each task).
    
    - "Delete" and "Edit" links for each task should only appear when you have the mouse cursor over that specific task.
    - Implement local storage functionality so that tasks persist even after refreshing the page. [Read guide about localStorage](https://blog.logrocket.com/localstorage-javascript-complete-guide/)
