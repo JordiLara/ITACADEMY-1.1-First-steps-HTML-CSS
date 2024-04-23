@@ -19,12 +19,12 @@ Build a simple to-do list application where users can add, edit, and delete task
    - Style the to-do list items, input field, buttons, and overall layout 
 
 3. **JavaScript Functionality:**
-   - Implement functionality to add a new task to the list when the user enters a task in the input field and presses enter OR clicks on an "Add Task" button.
-   - Add a feature to clear all tasks from the list (i.e. a "Delete all tasks" link somewhere)
+   
+   
    - Allow users to mark tasks as completed (clicking on a "checkbox" next to the task). When a task is completed, it appears strikedthrough ~~like this~~ and also in a different color (example: gray, instead of black). You can also un-check the checkbox to mark the task as not-done again (revert the change you just did).
-   - Allow users to delete tasks from the list (clicking on a "Delete" link next to each task).
+   
    - Provide the ability to edit tasks inline (clicking on an "Edit" link next to each task).
-   - Show somewhere the total number of pending tasks, which gets updated each time a task is added, done or deleted (i.e. "Pending Tasks (16)" could be the list header)
+   
    - "Delete" and "Edit" links for each task should only appear when you have the mouse cursor over that specific task.
    - Implement local storage functionality so that tasks persist even after refreshing the page. [Read guide about localStorage](https://blog.logrocket.com/localstorage-javascript-complete-guide/)
 

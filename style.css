@@ -1,3 +1,4 @@
-.task-done-checkbox:checked + li {
+li.task.task_done {
     text-decoration: line-through;
+    color:red
 }
