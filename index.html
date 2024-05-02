@@ -6,24 +6,25 @@
     <meta name="author" content="Jordi Lara">
     <title>Easy-To-Do</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 </head>
 <body>
 
     <div id="countResult"></div>
 
-    <div id="title"> 
-        <h4>Add a New To-Do</h4> 
+    <img src="https://cdn-icons-png.flaticon.com/512/2694/2694591.png" alt="A hammer and a wrench that indicates 'hands to work'" id="logo"></a>
+
+    <div class="thin-red-border" id="title"> 
+        <h4 class="text-red">Add a New To-Do</h4> 
         <label for="item">Add a new task to your To-Do</label>
         <input type="text" id="item" placeholder="Go Shoping"><br> 
         <input type="button" id="btn_item" name="addTask" value="Add Item"> 
         <ul id="itemList"></ul>
     </div>
 
-    <div>
+    <div class="thin-green-border">
         <label for="btn_deleteAll">Delete all task</label>
-        <input type="button" id="btn_deleteAll" name="deleteTask" value="Delete all taks"> 
+        <input type="button" id="btn_deleteAll" name="deleteTask" value="Delete all tasks"> 
     </div>
 
     <script type="module" src="main.js"></script> 

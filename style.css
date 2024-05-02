@@ -2,3 +2,42 @@ li.task.task_done {
     text-decoration: line-through;
     color: red
 }
+
+div {
+    font-size: 16px;
+    font-family: Lobster, monospace;
+}
+
+.thin-red-border {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+}
+.thin-green-border {
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.thin-black-border {
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.text-red {
+    color: red;
+}
+
+#logo {
+    max-width: 5%; max-height: 5%;
+}
+
+.button-yellow {
+    color: yellow;
+}
+
+#itemList li {
+    color: blue;
+}
+

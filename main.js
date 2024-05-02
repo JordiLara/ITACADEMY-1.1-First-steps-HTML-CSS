@@ -43,7 +43,6 @@ function renderTaskList() {
         // Generate a new element at the HTLM to show the added new task, and add a new row everytime a new task is added.
 
         let li = document.createElement('li'); 
-        li.classList.add('task');
         li.textContent = taskList[i].description;
         taskListElement.appendChild(li);
 
