@@ -12,11 +12,13 @@ div {
     border-color: red;
     border-width: 5px;
     border-style: solid;
+    border-radius: 50%;
 }
 .thin-green-border {
     border-color: green;
     border-width: 5px;
     border-style: solid;
+    border-radius: 10px;
 }
 
 .thin-black-border {
