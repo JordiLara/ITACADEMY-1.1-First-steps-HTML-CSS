@@ -119,6 +119,10 @@ footer {
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 
+    body {
+        background-color: red; /*changes screen color when on a tablet or medium size screens*/
+    }
+
     header {
         flex-direction: column;
         align-items: stretch;
@@ -153,6 +157,10 @@ footer {
 
 @media only screen and (max-width: 599px) {
 
+    body {
+        background-color: purple; /*changes screen color when on a smartphone or small screens*/
+    }
+
     header {
         flex-direction: column;
         align-items: stretch;
@@ -171,7 +179,7 @@ footer {
     }
 
     content article {
-        flex-basis: 100% /* Un solo artículo por fila en pantallas pequeñas */
+        flex-basis: 100% /* only one row per item for smaller screens */
     }
 
     aside {
