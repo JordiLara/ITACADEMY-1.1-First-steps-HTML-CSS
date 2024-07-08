@@ -36,7 +36,7 @@ header {
 
 .logo:hover {
     transform: scale(1.20); /* changes the size and color of the element when hovering */
-    background-color: pink;
+    background-color: magenta;
 }
 
 .nav {
