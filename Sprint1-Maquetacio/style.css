@@ -31,7 +31,12 @@ header {
     margin-left: 1%;
     margin-bottom: 2%;
     flex: 1; 
-    padding: 10px;        
+    padding: 10px; 
+}
+
+.logo:hover {
+    transform: scale(1.20); /* changes the size and color of the element when hovering */
+    background-color: pink;
 }
 
 .nav {
