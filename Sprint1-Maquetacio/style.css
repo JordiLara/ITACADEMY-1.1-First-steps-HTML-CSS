@@ -1,3 +1,8 @@
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 body { 
     background: #FFFFFF; 
     padding: 0;
@@ -14,7 +19,7 @@ header {
     background-color: #2c4059;
     margin-bottom: 2em;
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .logo {
@@ -24,8 +29,9 @@ header {
     margin-right: 1%;
     margin-left: 1%;
     margin-bottom: 2%;
+    flex: 1;
     width: 20%; 
-    padding: 10px;
+    padding: 10px;        
 }
 
 .nav {
@@ -35,6 +41,7 @@ header {
     margin-right: 1%;
     margin-left: 1%;
     margin-bottom: 2%;
+    flex: 3;
     width: 60%;
     padding: 10px
 }
@@ -46,13 +53,13 @@ header {
     margin-right: 1%;
     margin-left: 1%;
     margin-bottom: 2%;
+    flex: 1;
     width: 20%;
     padding: 10px;
 }
 
 .banner {
     background-color: #fed700;
-    padding: 10px;
     font-size: 30px;
     font-weight: bold;
     border: 20px solid #ff8b00;
