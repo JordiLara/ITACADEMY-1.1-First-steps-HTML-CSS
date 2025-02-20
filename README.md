@@ -17,10 +17,10 @@ No posee funcionalidades ni lógica de programación, únicamente se buscó refo
 - CSS3 (Flexbox)
 
 ## Ejecución
-Simplemente abre el archivo `index.html` en tu navegador favorito para ver el resultado.
+(https://itacademy-1-1-first-steps-html-css.vercel.app/).
 
 ## Captura de Pantalla
-**
+![HTML CSS](https://github.com/user-attachments/assets/75a3ceb6-5e04-4408-aeca-7dda20f4e0f3)
 
 ## Autor
 Creado como parte de prácticas personales.
